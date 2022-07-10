@@ -1,10 +1,12 @@
 <script>
 import AppNavbar from "./components/Navbar.vue";
+import AppMain from "./components/Main.vue";
 
 export default {
   name: "App",
   components: {
     AppNavbar,
+    AppMain,
   },
 };
 </script>
@@ -16,4 +18,5 @@ export default {
 
 <template>
   <AppNavbar />
+  <AppMain />
 </template>

@@ -19,6 +19,7 @@ import {
   faPowerOff,
   faChevronRight,
   faCircleUser,
+  faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -29,7 +30,8 @@ library.add(
   faCircleUser,
   faGear,
   faPowerOff,
-  faChevronRight
+  faChevronRight,
+  faCircleCheck
 );
 
 import uk from "uikit";

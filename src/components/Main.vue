@@ -1,0 +1,35 @@
+<template>
+  <div class="main">
+    <AppControlbar />
+    <div>main content!</div>
+    <div class="main-checklist">
+      <AppChecklist />
+    </div>
+  </div>
+</template>
+
+<script>
+import AppControlbar from "./Controlbar.vue";
+import AppChecklist from "./Checklist.vue";
+
+export default {
+  name: "AppMain",
+  components: {
+    AppControlbar,
+    AppChecklist,
+  },
+};
+</script>
+
+<style scoped>
+.main {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 1.4rem;
+}
+
+.main-checklist {
+  padding-top: 128px;
+  padding-right: 40px;
+}
+</style>
