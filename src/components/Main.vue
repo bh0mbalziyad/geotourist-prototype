@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <AppControlbar />
-    <div>main content!</div>
+    <div class="pt-10"><MainContentVue /></div>
     <div class="main-checklist">
       <AppChecklist />
     </div>
@@ -11,12 +11,14 @@
 <script>
 import AppControlbar from "./Controlbar.vue";
 import AppChecklist from "./Checklist.vue";
+import MainContentVue from "./MainContent.vue";
 
 export default {
   name: "AppMain",
   components: {
     AppControlbar,
     AppChecklist,
+    MainContentVue,
   },
 };
 </script>

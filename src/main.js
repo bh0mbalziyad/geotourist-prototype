@@ -20,6 +20,9 @@ import {
   faChevronRight,
   faCircleUser,
   faCircleCheck,
+  faPlus,
+  faCamera,
+  faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -31,7 +34,10 @@ library.add(
   faGear,
   faPowerOff,
   faChevronRight,
-  faCircleCheck
+  faCircleCheck,
+  faPlus,
+  faCamera,
+  faCircleXmark
 );
 
 import uk from "uikit";
