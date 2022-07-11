@@ -68,6 +68,104 @@
 
   <!-- ---------------------------------- Categories ----------------------------------- -->
   <h2 class="font-bold text-black text-2xl mt-14">Categories</h2>
+  <div class="flex flex-wrap gap-8 justify-between mt-7 app-category-container">
+    <article class="app-category-item item-active">
+      <img
+        src="../assets/images/categories/architecture.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/city-tours.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>City Tours</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/cycling.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Cycling</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/driving.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/educational.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/haunted.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/architecture.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/city-tours.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>City Tours</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/cycling.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Cycling</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/driving.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/educational.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+    <article class="app-category-item">
+      <img
+        src="../assets/images/categories/haunted.svg"
+        alt="Architecture"
+        class="w-full h-14 object-contain"
+      />
+      <p>Architecture</p>
+    </article>
+  </div>
 </template>
 
 <style scoped>
@@ -114,6 +212,48 @@
   align-items: center;
   padding: 8px 16px;
   border-radius: 999px;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+
+.app-category-item.item-active {
+  --svg-fill: white;
+  background: #2daee1;
+  color: white;
+}
+
+.app-category-item.item-active img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(309deg)
+    brightness(103%) contrast(103%);
+}
+
+.app-category-item {
+  --svg-fill: #2daee1;
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  height: 124px;
+  align-items: center;
+  border: 0.5px solid #d3dce0;
+  border-radius: 8px;
+  padding: 12px;
+  justify-content: space-around;
+}
+
+.app-category-item img {
+  filter: invert(45%) sepia(35%) saturate(3071%) hue-rotate(163deg)
+    brightness(96%) contrast(102%);
+}
+
+.app-category-item:hover {
+  cursor: pointer;
+}
+
+.app-category-container:last-child::after {
+  content: "";
+  flex-grow: 1;
+  height: 0px;
+  background: red;
 }
 </style>
 

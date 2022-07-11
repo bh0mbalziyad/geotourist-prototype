@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
+  <div class="main mb-20">
     <AppControlbar />
-    <div class="pt-10"><MainContentVue /></div>
+    <div class="pt-10 mx-12"><MainContentVue /></div>
     <div class="main-checklist">
       <AppChecklist />
     </div>
