@@ -26,7 +26,7 @@ export default {
 <style scoped>
 .main {
   display: grid;
-  grid-template-columns: 300px 1fr 300px;
+  grid-template-columns: 450px 1fr 300px;
   gap: 1.4rem;
 }
 

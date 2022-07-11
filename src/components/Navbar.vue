@@ -5,14 +5,17 @@
     </div> -->
     <!-- Desktop Links -->
     <div>
-      <ul class="flex gap-7 justify-center items-center">
+      <ul class="flex gap-7 justify-center items-center app-nav-links">
         <li class="hover:cursor-pointer text-gray-500">
           <a href="#">Desktop</a>
         </li>
         <li class="hover:cursor-pointer text-blue-400">
           <a href="#">Create</a>
         </li>
-        <li class="hover:cursor-pointer bg-gray-500 p-3 text-white rounded-3xl">
+        <li
+          style="background-color: #bdbfc2"
+          class="hover:cursor-pointer p-3 text-white rounded-3xl"
+        >
           <a href="#">Download</a>
         </li>
       </ul>
@@ -68,6 +71,14 @@
   background-color: #ffffff;
   box-shadow: inset 0 -0.5px 0 0 rgba(200, 199, 204, 0.5),
     0 2px 6px 0 rgba(211, 220, 224, 0.2);
+}
+
+.app-nav-links a {
+  text-decoration: none;
+}
+
+.app-nav-links a:hover {
+  text-decoration: none;
 }
 
 .app-dropdown {
