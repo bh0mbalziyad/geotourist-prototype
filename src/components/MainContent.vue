@@ -12,6 +12,7 @@
     >
       <font-awesome-icon icon="fa-solid fa-plus" />
       <p>Add...</p>
+      <AddForm />
     </button>
   </div>
   <!-- ----------------------------------xxx---------------------------------------------- -->
@@ -258,7 +259,11 @@
 </style>
 
 <script>
+import AddForm from "./AddForm.vue";
 export default {
   name: "AppMainContent",
+  components: {
+    AddForm,
+  },
 };
 </script>
