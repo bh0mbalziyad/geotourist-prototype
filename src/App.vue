@@ -13,7 +13,7 @@ export default {
 
 <style>
 @import url("../node_modules/uikit/dist/css/uikit-core.min.css");
-@import url("../dist/output.css");
+@import url("./assets/output.css");
 </style>
 
 <template>
