@@ -23,6 +23,7 @@ import {
   faPlus,
   faCamera,
   faCircleXmark,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -37,7 +38,8 @@ library.add(
   faCircleCheck,
   faPlus,
   faCamera,
-  faCircleXmark
+  faCircleXmark,
+  faXmark
 );
 
 import uk from "uikit";

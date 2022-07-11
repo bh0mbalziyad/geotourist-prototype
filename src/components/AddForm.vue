@@ -1,5 +1,6 @@
 <template>
   <div
+    id="app-add-form"
     class="uk-width-large shadow-lg rounded-lg app-modal border-gray-300 border border-opacity-25"
     uk-drop="mode:click;pos:bottom-right;"
   >
@@ -52,7 +53,10 @@
         </div>
         <p class="text-gray-500">Language</p>
       </article>
-      <article class="flex flex-col items-center justify-around">
+      <article
+        @click="closeForm('LinkModal')"
+        class="flex flex-col items-center justify-around"
+      >
         <div
           class="app-img-wrapper w-16 h-16 border border-gray-400 rounded-full p-4"
         >
@@ -64,7 +68,10 @@
         </div>
         <p class="text-gray-500">Link</p>
       </article>
-      <article class="flex flex-col items-center justify-around">
+      <article
+        @click="closeForm('QuizModal')"
+        class="flex flex-col items-center justify-around"
+      >
         <div
           class="app-img-wrapper w-16 h-16 border border-gray-400 rounded-full p-4"
         >
@@ -76,7 +83,10 @@
         </div>
         <p class="text-gray-500">Quiz</p>
       </article>
-      <article class="flex flex-col items-center justify-around">
+      <article
+        @click="closeForm('HintModal')"
+        class="flex flex-col items-center justify-around"
+      >
         <div
           class="app-img-wrapper w-16 h-16 border border-gray-400 rounded-full p-4"
         >
@@ -88,7 +98,10 @@
         </div>
         <p class="text-gray-500">Hint</p>
       </article>
-      <article class="flex flex-col items-center justify-around">
+      <article
+        @click="closeForm('EventModal')"
+        class="flex flex-col items-center justify-around"
+      >
         <div
           class="app-img-wrapper w-16 h-16 border border-gray-400 rounded-full p-4"
         >
@@ -112,7 +125,10 @@
         </div>
         <p class="text-gray-500">Upload map</p>
       </article>
-      <article class="flex flex-col items-center justify-around">
+      <article
+        @click="closeForm('BadgeModal')"
+        class="flex flex-col items-center justify-around"
+      >
         <div
           class="app-img-wrapper w-16 h-16 border border-gray-400 rounded-full p-4"
         >
@@ -152,7 +168,21 @@
 </style>
 
 <script>
+import { modalStore } from "../modalStore";
+import ui from "uikit";
+
 export default {
   name: "AddForm",
+  data() {
+    return {
+      modalStore,
+    };
+  },
+  methods: {
+    closeForm(currentModal) {
+      this.modalStore.updateModal(true, currentModal);
+      ui.drop(document.getElementById("app-add-form")).hide(false);
+    },
+  },
 };
 </script>
