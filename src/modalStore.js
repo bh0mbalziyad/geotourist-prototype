@@ -8,5 +8,5 @@ export const modalStore = reactive({
     this.showModal = toShow;
     this.currentModal = currentModal;
   },
-  currentModal: "LinkModal",
+  currentModal: null,
 });

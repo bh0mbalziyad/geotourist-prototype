@@ -1,12 +1,15 @@
 <template>
   <Teleport to="#modal-target">
-    <div
-      @click="this.modalStore.updateModal(false)"
-      class="app-modal-backdrop"
-    ></div>
-    <Transition name="modal">
+    <Transition name="modal-backdrop" appear>
       <div
-        v-if="this.modalStore.showModal"
+        v-if="toShow"
+        @click="this.modalStore.updateModal(false)"
+        class="app-modal-backdrop"
+      ></div>
+    </Transition>
+    <Transition name="modal" appear>
+      <div
+        v-if="toShow"
         class="border border-gray-400 rounded-lg bg-white shadow app-modal"
       >
         <slot>This is a modal!</slot>
@@ -24,6 +27,9 @@ export default {
     return {
       modalStore,
     };
+  },
+  props: {
+    toShow: Boolean,
   },
 };
 </script>
@@ -52,12 +58,22 @@ export default {
 
 .modal-enter-active,
 .modal-leave-active {
-  transition: transform, opacity 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .modal-enter-from,
 .modal-leave-to {
+  transform: translateY(-20%);
   opacity: 0;
-  transform: translateY(-10%);
+}
+
+.modal-backdrop-enter-active,
+.modal-backdrop-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-backdrop-enter-from,
+.modal-backdrop-leave-to {
+  opacity: 0;
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <AppModal>
+  <AppModal
+    :to-show="modalStore.showModal && modalStore.currentModal === 'LinkModal'"
+  >
     <div class="px-4 py-4 flex flex-col items-center gap-7">
       <font-awesome-icon
         class="cursor-pointer text-xl self-start"

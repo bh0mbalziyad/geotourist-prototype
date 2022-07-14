@@ -8,31 +8,15 @@
       <AppChecklist />
     </div>
   </div>
-  <LinkModal
-    v-if="
-      this.modalStore.currentModal === 'LinkModal' && this.modalStore.showModal
-    "
-  />
-  <QuizModal
-    v-if="
-      this.modalStore.currentModal === 'QuizModal' && this.modalStore.showModal
-    "
-  />
-  <HintModal
-    v-if="
-      this.modalStore.currentModal === 'HintModal' && this.modalStore.showModal
-    "
-  />
-  <EventModal
-    v-if="
-      this.modalStore.currentModal === 'EventModal' && this.modalStore.showModal
-    "
-  />
-  <BadgeModal
-    v-if="
-      this.modalStore.currentModal === 'BadgeModal' && this.modalStore.showModal
-    "
-  />
+  <LinkModal />
+  <QuizModal />
+  <HintModal />
+  <EventModal />
+  <BadgeModal />
+  <!-- <QuizModal />
+  <HintModal />
+  <EventModal />
+  <BadgeModal /> -->
 </template>
 
 <script>
